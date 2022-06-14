@@ -81,7 +81,7 @@ function item3() {
   }
     
 }
-
+/*
 function createDiv() {
   const newDiv = document.createElement('div');
   const newText = document.createTextNode('안녕하세요');
@@ -90,3 +90,5 @@ function createDiv() {
   create
   
 }
+
+*/
