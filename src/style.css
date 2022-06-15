@@ -13,16 +13,17 @@
   padding: 0;
 }
 
-.wrap {
-  position: relative;
-  min-height: 100%;
-}
 html, body {
   background-image: url('img/배경.jpg');
   background-repeat: no-repeat;
   font-family: "Light";
   height: 100vh;
   width: 100%;
+}
+
+.wrap {
+  position: relative;
+  min-height: 100%;
 }
 
 h1 {
@@ -44,10 +45,20 @@ h2 {
   margin-top: 10px;
 }
 
+.bt {
+  border: none;
+  font-family: 'Light';
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  top:20px;
+  text-align: center;
+}
+
 .speech-bubble {
   font-size: 1.1rem;
   position: relative;
-  top: 210px;
+  top: 50px;
   background: #aef9c8;
   border-radius: .4em;
   line-height: 30px;
@@ -67,16 +78,6 @@ h2 {
   border-top: 0;
   margin-left: -20px;
   margin-top: -20px;
-}
-
-.bt {
-    border: none;
-    font-family: 'Light';
-    font-size: 24px;
-    cursor: pointer;
-    position: relative;
-    top:180px;
-    text-align: center;
 }
 
 /* 내가 한거 아님 */
@@ -102,7 +103,13 @@ h2 {
 }
 
 
-#tab1 > div:nth-child(2) > button > img {
+#tab1 > div:nth-child(2) > button > img{
+ width: 50px;
+}
+#tab1 > div:nth-child(3) > button > img{
+  width: 50px;
+}
+#tab1 > div:nth-child(4) > button > img{
   width: 50px;
 }
 .content {
@@ -112,7 +119,7 @@ h2 {
 .items {
   display: none;
   padding: 10px;
-  background-color: #fff;
+  background-color: white;
   position: relative;
   height: 480px;
 }
@@ -160,31 +167,51 @@ h2 {
   font-family: none;
   font-size: 13px;
   text-align: center;
+  line-height: 2;
+  padding: 12px 24px;
 }
+
 .ft-item2 {
   display: flex;
-  justify-content: space-around; 
+  margin: auto;
+  width: 400px;
 }
 
 
-@media (min-width: 1200px) {
-.header ,.contents {
+@media (max-width: 1200px) {
+.header  {
     max-width: 1140px;
   }
 }
-@media (min-width: 992px) {
-.header ,.contents {
+@media (max-width: 992px) {
+.header{
     max-width: 960px;
   }
 }
-@media (min-width: 768px){
-.header ,.contents{
+@media (max-width: 768px){
+.header {
     max-width: 720px;
   }
 }
 
-@media (min-width: 576px){
-.header ,.contents{
+@media (max-width: 576px){
+.header {
     max-width: 540px;
+  }
+}
+
+@media (max-width: 500px){
+  .ft-item1{
+    font-size: 8px;
+    margin: auto;
+  }
+  .ft-item2{
+    display: none;
+  }
+}
+
+@media (max-width: 375px){
+  .contents{
+    
   }
 }
