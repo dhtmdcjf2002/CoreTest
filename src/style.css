@@ -53,6 +53,7 @@ h2 {
   position: relative;
   top:20px;
   text-align: center;
+  background-color: transparent;
 }
 
 .speech-bubble {
@@ -118,10 +119,11 @@ h2 {
 
 .items {
   display: none;
-  padding: 10px;
+  padding: 20px 12px ;
   background-color: white;
   position: relative;
-  height: 480px;
+  height: 60vh;
+  text-align: center;
 }
 
 .items::before {
@@ -212,6 +214,6 @@ h2 {
 
 @media (max-width: 375px){
   .contents{
-    
+
   }
 }
