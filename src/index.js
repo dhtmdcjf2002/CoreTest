@@ -21,20 +21,19 @@ function item1() {
       b.style.display = 'none';
     }
     document.getElementById("result").value =
-    (parseInt(a) - 1) * (3 * parseInt(a) + 16) / 2 + 10;
+    (parseInt(a) - 1) * (3 * parseInt(a) + 16) / 2 + 10 ;
 
     document.getElementById("result2").value =
-    Math.floor(((parseInt(a) - 1) * (3 * parseInt(a) + 16) / 2 + 10) /35) ;
+    Math.floor(((parseInt(a) - 1) * (3 * parseInt(a) + 16) / 2 + 10) /35) + "개" ;
 
     document.getElementById("result3").value =
     ((parseInt(a) - 1) * (3 * parseInt(a) + 16) / 2 + 10) %35 ;
-
-  }else if('String'){
-    alert('1~25까지 올바른 레벨을 입력해주세요');
-
-    var input = document.getElementById("result");
-input.value = null;
+  }else if(a == String){
+    alert('숫자만 입력하세요.');
+  }else{
+    alert('1~25까지 올바른 레벨을 입력해주세요.');
   }
+  return;
 }
 
 function item2() {
@@ -50,15 +49,15 @@ function item2() {
     parseInt(a) * 2 * (parseInt(a) + 19);
 
   document.getElementById("result5").value =
-    Math.floor((parseInt(a) * 2 * (parseInt(a) + 19)) / 35) ;
+    Math.floor((parseInt(a) * 2 * (parseInt(a) + 19)) / 35) + "개" ;
 
   document.getElementById("result6").value =
   (parseInt(a) * 2 * (parseInt(a) + 19)) % 35 ;
 }else if('String'){
   alert('1~25까지 올바른 레벨을 입력해주세요');
-  var input = document.getElementById("result");
-input.value = null;
+
   }
+  return;
 }
 
 function item3() {
@@ -73,22 +72,25 @@ function item3() {
   document.getElementById("result7").value =
     parseInt(a) * 50;
   document.getElementById("result8").value =
-   Math.floor ((parseInt(a) * 50) / 35);
+   Math.floor ((parseInt(a) * 50) / 35) + "개";
   document.getElementById("result9").value =
     parseInt(a) * 50 % 35;
-  }else{
-    alert('최대 20개까지 입력할 수 있습니다.');
+  }else if('String'){
+    alert('최대 20개까지 올바른 개수를 입력해주세요');
   }
-    
+  return;
 }
-/*
+
+function  prohibition() {
+  alert('특수코어는 해당 기능을 이용할 수 없습니다.');
+}
+
+/* 
 function createDiv() {
   const newDiv = document.createElement('div');
   const newText = document.createTextNode('안녕하세요');
   newDiv.appendChild(newText);
   document.body.appendChild(newDiv);
   create
-  
-}
-
+} 
 */
