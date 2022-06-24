@@ -45,28 +45,6 @@ h2 {
   font-size: 20px;
 }
 
-
-.speech-bubble {
-  font-size: 1rem;
-  position: relative;
-  top: 50px;
-  background: #aef9c8;
-  border-radius: .4em;
-  line-height: 30px;
-  text-align: center;
-  display: none;
-
-}
-
-
-.speech-bubble input {
-  font-family: "Light";
-  border: none;
-  background-color: transparent;
-  font-size: 1.3rem;
-}
-
-/* 내가 한거 아님 */
 .contents {
   padding: 20px ;
 }
@@ -89,21 +67,6 @@ h2 {
   border: 2px solid black;
 }
 
-.max {
-  display: flex; justify-content: space-around; padding-top:12px;
-}
-#tab1 > div:nth-child(2) > button > img{
- width: 50px;
- background-color: transparent;
-}
-#tab1 > div:nth-child(3) > button > img{
-  width: 50px;
-  background-color: transparent;
-}
-#tab1 > div:nth-child(4) > button > img{
-  width: 50px;
-  background-color: transparent;
-}
 .content {
   display: flex;
   justify-content: center;
@@ -119,43 +82,17 @@ h2 {
   outline: 2px solid black;
 }
 
-.items p {
-  padding-top: 10px;
+.items div {
+  padding-top: 12px;
 }
 
-#tab3 img {
-  padding-top: 15px;
-}
-
-#op3 {
-  margin-top: 15px;
-}
-
-/*
-.items::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: 10;
-  width: 90px;
-  height: 4px;
-  background-color: white;
-}
-
-.items:nth-child(2)::before {
-  left: 210px;
-  top: -4px;
-  background-color: white;
-}
-
-.items:nth-child(3)::before {
-  left: 288px;
-  top: -4px;
-  background-color: white;
-}
-*/
 .items.active {
   display: inline-block;
+}
+
+.max {
+  display: flex; 
+  justify-content: space-around;
 }
 
 .bt {
@@ -167,7 +104,7 @@ h2 {
   height: 35px; 
   width: 100px; 
   padding: 0px 24px;
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .bt:nth-child(1) {
@@ -180,7 +117,37 @@ h2 {
   border: 2px solid red; 
 }
 
-/*ㅇㅇㅇ */
+.speech-bubble {
+  font-size: 1rem;
+  position: relative;
+  top: 50px;
+  background: #aef9c8;
+  border-radius: .4em;
+  line-height: 30px;
+  text-align: center;
+  display: none;
+}
+
+.speech-bubble input {
+  font-family: "Light";
+  border: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+}
+
+
+#tab1 > div:nth-child(2) > button > img{
+ width: 50px;
+ background-color: transparent;
+}
+#tab1 > div:nth-child(3) > button > img{
+  width: 50px;
+  background-color: transparent;
+}
+#tab1 > div:nth-child(4) > button > img{
+  width: 50px;
+  background-color: transparent;
+}
 
 .ft {
   display: flex;
