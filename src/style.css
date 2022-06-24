@@ -42,8 +42,7 @@ h1 {
 
 h2 {
   text-align: center;
-  margin-top: 10px;
-  font-size: 1.4rem;
+  font-size: 20px;
 }
 
 
@@ -69,7 +68,7 @@ h2 {
 
 /* 내가 한거 아님 */
 .contents {
-  padding: 20px 30px ;
+  padding: 20px ;
 }
 .tabs {
   display: flex;
@@ -106,7 +105,6 @@ h2 {
   background-color: transparent;
 }
 .content {
-  border: 2px solid black;
   display: flex;
   justify-content: center;
 }
@@ -118,6 +116,7 @@ h2 {
   position: relative;
   width: 50vh;
   text-align: center;
+  outline: 2px solid black;
 }
 
 .items p {
