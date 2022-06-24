@@ -13,7 +13,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   background-image: url('img/배경.jpg');
   background-repeat: no-repeat;
   font-family: "Light";
@@ -46,8 +47,9 @@ h2 {
 }
 
 .contents {
-  padding: 20px ;
+  padding: 20px;
 }
+
 .tabs {
   display: flex;
   justify-content: center;
@@ -74,7 +76,7 @@ h2 {
 
 .items {
   display: none;
-  padding: 20px 12px ;
+  padding: 20px 20px;
   background-color: white;
   position: relative;
   width: 50vh;
@@ -82,16 +84,12 @@ h2 {
   outline: 2px solid black;
 }
 
-.items div {
-  padding-top: 12px;
-}
-
 .items.active {
   display: inline-block;
 }
 
 .max {
-  display: flex; 
+  display: flex;
   justify-content: space-around;
 }
 
@@ -100,29 +98,60 @@ h2 {
   cursor: pointer;
   text-align: center;
   font-size: 12px;
-  background-color: #d1cece; 
-  height: 35px; 
-  width: 100px; 
+  background-color: #d1cece;
+  height: 35px;
+  width: 100px;
   padding: 0px 24px;
   border-radius: 5px;
 }
 
 .bt:nth-child(1) {
-  border: 2px solid green; 
+  border: 2px solid green;
 }
+
 .bt:nth-child(2) {
-  border: 2px solid black; 
+  border: 2px solid black;
 }
-.bt:nth-child(3){
-  border: 2px solid red; 
+
+.bt:nth-child(3) {
+  border: 2px solid red;
+}
+
+.item-visual {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item-visual div img {
+  width: 66px;
+}
+
+.circul-wrap {
+  max-height: 200px;
+  position: relative;
+  height: 25vh;
+}
+
+.circul-wrap p {
+  background-color: white;
+  color: black;
+  position: absolute;
+  left: 24px;
+  top: -8px;
+  width: 50px;
+}
+
+.circul {
+
+  border: 2px dotted green;
+  height: 100%;
+  width: 100%;
+  margin: auto;
 }
 
 .speech-bubble {
-  font-size: 1rem;
-  position: relative;
-  top: 50px;
-  background: #aef9c8;
-  border-radius: .4em;
   line-height: 30px;
   text-align: center;
   display: none;
@@ -133,20 +162,6 @@ h2 {
   border: none;
   background-color: transparent;
   font-size: 1.3rem;
-}
-
-
-#tab1 > div:nth-child(2) > button > img{
- width: 50px;
- background-color: transparent;
-}
-#tab1 > div:nth-child(3) > button > img{
-  width: 50px;
-  background-color: transparent;
-}
-#tab1 > div:nth-child(4) > button > img{
-  width: 50px;
-  background-color: transparent;
 }
 
 .ft {
@@ -160,6 +175,7 @@ h2 {
   height: 100px;
 
 }
+
 .ft-item1 {
   font-family: none;
   font-size: 13px;
@@ -183,28 +199,30 @@ h2 {
 
 
 @media (max-width: 1200px) {
-.header  {
+  .header {
     max-width: 1140px;
   }
 }
+
 @media (max-width: 992px) {
-.header{
+  .header {
     max-width: 960px;
   }
 }
-@media (max-width: 768px){
-.header {
+
+@media (max-width: 768px) {
+  .header {
     max-width: 720px;
   }
 }
 
-@media (max-width: 576px){
-.header {
+@media (max-width: 576px) {
+  .header {
     max-width: 540px;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
 
   h2 {
     font-size: 1.2rem;
@@ -213,17 +231,13 @@ h2 {
   .items {
     width: 40vh;
   }
-  .ft-item1{
+
+  .ft-item1 {
     font-size: 12px;
     margin: auto;
   }
-  .ft-item2{
+
+  .ft-item2 {
     display: none;
-  }
-}
-
-@media (max-width: 375px){
-  .contents{
-
   }
 }
