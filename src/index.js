@@ -85,12 +85,16 @@ function  prohibition() {
   alert('특수코어는 해당 기능을 이용할 수 없습니다.');
 }
 
-/* 
-function createDiv() {
-  const newDiv = document.createElement('div');
-  const newText = document.createTextNode('안녕하세요');
-  newDiv.appendChild(newText);
-  document.body.appendChild(newDiv);
-  create
-} 
-*/
+function prohibition() {
+  alert('특수코어는 해당 기능을 이용할 수 없습니다.');
+}
+
+function add_textbox() {
+  const box = document.getElementById("space");
+  const newP = document.createElement('p');
+  newP.innerHTML = "<input type='text'> <input type='button' value='삭제' onclick='remove(this)'>";
+          box.appendChild(newP);
+}
+const remove = (obj) => {
+  document.getElementById('space').removeChild(obj.parentNode);
+}
