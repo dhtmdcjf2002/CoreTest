@@ -1,7 +1,6 @@
 # CoreCirculator
 ## 코어 계산기
 
-*목차
   1.제작 의도
   2.사용방법
   3.Version
