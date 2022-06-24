@@ -10,21 +10,10 @@
 <body>
   <div class="wrap">
 
-    <!-- header  -->
       <div class="header">
-
-        <div class="head">
-
           <h1>코젬 분해기</h1>
-        
-        </div>
-
       </div>
 
-    <!-- header  -->
-
-
-    <!-- content -->
     <div class="contents">
 
       <div class="tabs" >
@@ -49,29 +38,28 @@
 
           <h2>가지고 있는 강화코어의 레벨은?</h2>
 
-          <div>
-            <button onclick="createDiv()"><img src="src/img/코젬.png" alt=""></button>
+          <div id="space">
+            <button onclick="createDiv()">
+            <img src="src/img/코젬.png" alt="">
+            </button>
             <input id="op1" type="text" size="5" maxlength="2"/>
           </div>
 
           <div class="max">
-            <button class="bt">추가</button>
-            <input type="button" value="분해하기" class="bt" onclick="item1();" />
+            <button class="bt" onclick="add_textbox()">추가</button>
+            <input type="button" value="분해하기" class="bt" onclick="item1();"/>
             <button class="bt">삭제</button>
           </div>
 
           <div class="speech-bubble" id="box1">
-
             <div>
               강화코어 분해시 얻는 조각수: <input id="result" type="text" size="5" readonly /> <br />
               얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result2" type="text" size="5" readonly /> <br />
               코어젬스톤을 제작하고 남은 조각수: <input id="result3" type="text" size="5" readonly />
             </div>
+          </div>   
 
-          </div>
-                  
         </div>
-
 
         <div id="tab2" data-tab-content class="items">
 
@@ -102,7 +90,6 @@
 
 
         <div id="tab3" data-tab-content class="items">
-
                   <div>
                     <h2>분해할려는 특수코어의 개수는?</h2>
                     <p>※최대 20개까지 입력가능</p>
@@ -136,7 +123,6 @@
     </div>
             
   <script src="src/index.js"></script>
-<!-- footer -->
       <footer class="ft">
 
         <div class="ft-item1">
@@ -145,16 +131,13 @@
           010-6415-4735, <a href="mailto:ohsangchu@naver.com">ohsangchu@naver.com</a> | version : 1.01 <br>
         </div>
 
-
         <div class="ft-item2">
           <a href="https://www.instagram.com/ohsangchu/"><img src="src/img/instagram.png"></a>
           <a href="https://blog.naver.com/ohsangchu"><img src="src/img/blog.png" ></a>
           <a href="https://github.com/dhtmdcjf2002"><img src="src/img/github.png"  ></a>
-      
         </div>
 
       </footer>
-
     </div>
   </body>
 </html>
